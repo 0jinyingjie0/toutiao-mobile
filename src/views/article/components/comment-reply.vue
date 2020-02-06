@@ -134,7 +134,7 @@ export default {
 
         this.$toast.success('发布成功')
       } catch (err) {
-        console.log(err)
+        window.console.log(err)
         this.$toast.fail('发布失败')
       }
     }

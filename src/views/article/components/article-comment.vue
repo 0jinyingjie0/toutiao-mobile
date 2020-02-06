@@ -77,7 +77,7 @@ export default {
         limit: this.limit
       })
       // 将数据添加到列表
-      console.log(data)
+
       const { results } = data.data
       this.list.push(...results)
 

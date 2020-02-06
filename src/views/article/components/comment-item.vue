@@ -73,7 +73,7 @@ export default {
         // 跟新视图转态
         this.comment.is_liking = !this.comment.is_liking
       } catch (err) {
-        console.log(err)
+        window.console.log(err)
       }
     }
   }

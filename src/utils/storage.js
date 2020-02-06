@@ -7,7 +7,7 @@ export const getItem = name => {
   try {
     return JSON.parse(data)
   } catch (err) {
-    console.log('转换失败', err)
+    window.console.log('转换失败', err)
     return data
   }
 }
