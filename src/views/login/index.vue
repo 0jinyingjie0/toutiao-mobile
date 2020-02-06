@@ -50,8 +50,8 @@ export default {
     return {
       isCountDownShow: false,
       userform: {
-        mobile: '',
-        code: ''
+        mobile: '13911111111',
+        code: '246810'
       }
     }
   },
@@ -106,9 +106,12 @@ export default {
       })
       try {
         const { data } = await login(this.userform)
-        // console.log('登录成功', res)
-        this.$store.commit('setUser', data)
+        console.log(data)
+
+        this.$store.commit('setUser', data.data)
+        console.log('登录成功', data.data)
         this.$toast.success('登录成功')
+        this.$router.push('/')
       } catch (err) {
         console.log('登录失败', err)
         this.$toast.fail('登录失败，手机或者验证码错误')

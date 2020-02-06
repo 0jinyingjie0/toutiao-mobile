@@ -12,6 +12,9 @@ import 'amfe-flexible'
 // 加载全局样式
 import './styles/index.less'
 
+// 日期格式化
+import './utils/datetime'
+
 // 加载验证插件的初始配置
 import './utils/validation.js'
 
